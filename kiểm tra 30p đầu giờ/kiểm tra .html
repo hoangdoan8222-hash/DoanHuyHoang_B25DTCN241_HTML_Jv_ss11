@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Manager</title>
+</head>
+<body>
+
+<script>
+
+    let students = [
+        { name: "Nguyễn Văn A", score: 8.5 },
+        { name: "Trần Thị B", score: 4.2 },
+        { name: "Lê Văn C", score: 9.0 },
+        { name: "Phạm Văn D", score: 5.5 },
+        { name:" hoang vanw E", score:3.8 },
+    ];
+
+    function getExcellentStudents(studentList) {
+        let result = [];
+
+        for (let i = 0; i < studentList.length; i++) {
+            if (studentList[i].score >= 8.0) {
+                result.push(studentList[i]);
+            }
+        }
+
+        return result;
+    }
+    
+       function checkWeakStudent(studentList) {
+        let hasWeak = false;
+
+        for (let i = 0; i < studentList.length; i++) {
+            if (studentList[i].score < 4.0) {
+                hasWeak = true;
+                break;
+            }
+        }
+
+        if (hasWeak) {
+            console.log("Có sinh viên yếu");
+        } else {
+            console.log("Không có sinh viên yếu");
+        }
+    }
+
+
+
+    
+            
+        
+
+
+           
+
